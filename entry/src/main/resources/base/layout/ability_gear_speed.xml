@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:orientation="horizontal"
+    ohos:alignment="vertical_center"
+    ohos:background_element="$graphic:background_common">
+
+    <DirectionalLayout
+        ohos:height="match_parent"
+        ohos:width="match_content"
+        ohos:orientation="vertical"
+        ohos:alignment="left">
+        <Text
+            ohos:height="match_content"
+            ohos:width="match_content"
+            ohos:text="调速"
+            ohos:left_padding="17vp"
+            ohos:top_padding="17vp"
+            ohos:text_size="20fp"/>
+
+        <Text
+            ohos:id="$+id:gear_value"
+            ohos:height="match_content"
+            ohos:width="match_content"
+            ohos:text="0档"
+            ohos:left_padding="17vp"
+            ohos:text_size="15fp"
+            ohos:text_color="#52594E"></Text>
+
+    </DirectionalLayout>
+
+
+    <Slider
+        ohos:id="$+id:progressSlider"
+        ohos:left_margin="8vp"
+        ohos:top_padding="0vp"
+
+        ohos:orientation="horizontal"
+
+        ohos:progress_width="5vp"
+        ohos:height="60vp"
+        ohos:width="280vp"
+        ohos:max="120"
+        ohos:min="0"
+        ohos:progress="0"
+        ohos:progress_color="#0A59F7"
+        ohos:background_instruct_element="#F2F2F2"/>
+
+</DirectionalLayout>

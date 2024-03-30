@@ -1,0 +1,126 @@
+{
+  "app": {
+    "bundleName": "com.wdk.sports",
+    "vendor": "wdk",
+    "version": {
+      "code": 1000000,
+      "name": "1.0.0"
+    }
+  },
+  "deviceConfig": {},
+  "module": {
+    "package": "com.wdk.sports",
+    "name": ".MyApplication",
+    "mainAbility": "com.wdk.sports.MainAbility",
+    "deviceType": [
+      "phone"
+    ],
+    "metaData": {
+      "customizeData": [
+        {
+          "name": "hwc-theme",
+          "value": "androidhwext:style/Theme.Emui.NoTitleBar",
+          "extra": ""
+        },
+        {
+          "name": "com.huawei.hms.client.appid",
+          "value": "107750765"
+        }
+      ]
+    },
+    "distro": {
+      "deliveryWithInstall": true,
+      "moduleName": "entry",
+      "moduleType": "entry",
+      "installationFree": false
+    },
+    "abilities": [
+      {
+        "skills": [
+          {
+            "entities": [
+              "entity.system.home"
+            ],
+            "actions": [
+              "action.system.home"
+            ]
+          }
+        ],
+        "configChanges": [
+          "orientation"
+        ],
+        "orientation": "unspecified",
+        "name": "com.wdk.sports.MainAbility",
+        "icon": "$media:icon",
+        "description": "$string:mainability_description",
+        "label": "$string:entry_MainAbility",
+        "type": "page",
+        "launchType": "standard"
+      },
+      {
+        "orientation": "followRecent",
+        "name": "com.wdk.sports.VideoMainAbility",
+        "icon": "$media:icon",
+        "description": "$string:videomainability_description",
+        "label": "$string:entry_VideoMainAbility",
+        "type": "page",
+        "launchType": "standard"
+      },
+      {
+        "orientation": "unspecified",
+        "name": "com.wdk.sports.UpgradeMainAbility",
+        "icon": "$media:icon",
+        "description": "$string:upgrademainability_description",
+        "label": "$string:entry_UpgradeMainAbility",
+        "type": "page",
+        "launchType": "standard"
+      }
+    ],
+    "reqPermissions": [
+      {
+        "name": "ohos.permission.USE_BLUETOOTH"
+      },
+      {
+        "name": "ohos.permission.DISCOVER_BLUETOOTH"
+      },
+      {
+        "name": "com.huawei.permission.sec.MDM_BLUETOOTH"
+      },
+      {
+        "name": "ohos.permission.LOCATION_IN_BACKGROUND"
+      },
+      {
+        "name": "ohos.permission.MEDIA_LOCATION"
+      },
+      {
+        "name": "ohos.permission.LOCATION",
+        "reason": "操作蓝牙",
+        "usedScene": {
+          "ability": [
+            ".MainAbility"
+          ],
+          "when": "inuse"
+        }
+      },
+      {
+        "reason": "网络请求",
+        "name": "ohos.permission.INTERNET",
+        "usedScene": {
+          "ability": [
+            "com.wdk.sports.MainAbility"
+          ],
+          "when": "always"
+        }
+      },
+      {
+        "name": "com.example.dataabilityhelperdemo.DataAbility.DATA"
+      },
+      {
+        "name": "ohos.permission.READ_USER_STORAGE"
+      },
+      {
+        "name": "ohos.permission.WRITE_USER_STORAGE"
+      }
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+设备：
+    1. 档位为0，其它不为0，表示暂停
+    2. 档位等信息都为0，表示结束运动
+
+    OkHttpUtils
+        .get()
+        .url( Constans.HTTP_HEAD + "/bodybuilding/appOTA/query?product_id=2HGR&product_type=LYTSJ-004")
+        .build()
+        .execute(new StringCallback() {
+            @Override
+            public void onError(Call call, Exception e, int i) {
+                System.out.println("网络请求出错:" + e );
+            }
+
+            @Override
+            public void onResponse(String s, int i) {
+                System.out.println("网络请求成功:" + s );
+            }
+        });

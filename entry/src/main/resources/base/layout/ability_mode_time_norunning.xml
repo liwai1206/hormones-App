@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:orientation="horizontal"
+    ohos:background_element="$graphic:background_common_norunning"
+    ohos:alignment="horizontal_center"
+    ohos:top_padding="10vp">
+
+    <DirectionalLayout
+        ohos:height="match_parent"
+        ohos:width="170vp"
+        ohos:orientation="vertical"
+        ohos:alignment="center">
+
+        <DirectionalLayout
+            ohos:height="54vp"
+            ohos:width="54vp"
+            ohos:alignment="center"
+            ohos:background_element="$graphic:background_mode_nouse">
+
+            <Image
+                ohos:height="30vp"
+                ohos:width="30vp"
+                ohos:scale_mode="stretch"
+                ohos:image_src="$media:menu"></Image>
+        </DirectionalLayout>
+
+
+
+        <Button
+            ohos:height="match_content"
+            ohos:width="match_content"
+            ohos:text="自由模式"
+            ohos:element_right="$media:down_arrow_gray"
+            ohos:top_margin="5vp"
+            ohos:text_size="15fp"
+            ohos:text_color="#DEE0E1"></Button>
+
+    </DirectionalLayout>
+
+    <DirectionalLayout
+        ohos:height="match_parent"
+        ohos:width="170vp"
+        ohos:orientation="vertical"
+        ohos:alignment="center">
+
+        <DirectionalLayout
+            ohos:height="54vp"
+            ohos:width="54vp"
+            ohos:alignment="center"
+            ohos:background_element="$graphic:background_mode_nouse">
+            <Image
+                ohos:height="30vp"
+                ohos:width="30vp"
+                ohos:scale_mode="stretch"
+                ohos:image_src="$media:time_white"></Image>
+        </DirectionalLayout>
+
+
+
+        <Button
+            ohos:height="match_content"
+            ohos:width="match_content"
+            ohos:text="定时"
+            ohos:element_right="$media:down_arrow_gray"
+            ohos:top_margin="5vp"
+            ohos:text_size="15fp"
+            ohos:text_color="#DEE0E1"></Button>
+
+
+    </DirectionalLayout>
+
+</DirectionalLayout>

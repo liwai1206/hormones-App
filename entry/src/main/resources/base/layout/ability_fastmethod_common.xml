@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_content"
+    ohos:width="match_content"
+    ohos:orientation="vertical"
+    ohos:background_element="$graphic:background_toast_common">
+
+    <Text
+        ohos:id="$+id:text_title"
+        ohos:left_padding="20vp"
+        ohos:top_padding="15vp"
+        ohos:height="match_content"
+        ohos:width="340vp"
+        ohos:text="请在“智慧生活”权限管理中开启“创建桌面快捷方式”权限用于在桌面管理设备"
+        ohos:text_size="15vp"
+        ohos:text_weight="400"
+        ohos:multiple_lines="true"
+        ohos:line_height_num="2.5"/>
+
+
+    <DirectionalLayout
+        ohos:top_margin="40vp"
+        ohos:height="match_content"
+        ohos:width="match_parent"
+        ohos:orientation="horizontal"
+        ohos:alignment="vertical_center">
+
+        <DirectionalLayout
+            ohos:height="match_content"
+            ohos:width="169vp"
+            ohos:orientation="horizontal"
+            ohos:alignment="center">
+            <Button
+                ohos:id="$+id:btn_cancel"
+                ohos:height="40vp"
+                ohos:width="60vp"
+                ohos:text="取消"
+                ohos:text_size="20vp"
+                ohos:text_color="#0A59F7"
+                ohos:text_weight="500"></Button>
+        </DirectionalLayout>
+
+        <Text
+            ohos:height="match_content"
+            ohos:width="match_content"
+            ohos:text="|"
+            ohos:text_size="20vp"
+            ohos:text_color="#C5C5C5"/>
+
+        <DirectionalLayout
+            ohos:height="match_content"
+            ohos:width="169vp"
+            ohos:orientation="horizontal"
+            ohos:alignment="center">
+            <Button
+                ohos:id="$+id:btn_ok"
+                ohos:height="40vp"
+                ohos:width="match_parent"
+                ohos:text="前往设置"
+                ohos:text_size="20vp"
+                ohos:text_alignment="center"
+                ohos:text_color="#0A59F7"
+                ohos:text_weight="500"></Button>
+        </DirectionalLayout>
+    </DirectionalLayout>
+
+
+
+</DirectionalLayout>

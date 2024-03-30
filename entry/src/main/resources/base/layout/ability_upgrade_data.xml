@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:orientation="horizontal">
+
+    <!--        固件升级-->
+    <DirectionalLayout
+        ohos:height="match_parent"
+        ohos:width="165vp"
+        ohos:orientation="horizontal"
+        ohos:alignment="vertical_center"
+        ohos:background_element="$graphic:background_common">
+        <Text
+            ohos:left_padding="10vp"
+            ohos:height="match_content"
+            ohos:width="match_content"
+            ohos:text="固件升级"
+            ohos:text_size="20vp"></Text>
+
+        <Button
+            ohos:id="$+id:btn_upgrade"
+            ohos:height="40vp"
+            ohos:width="40vp"
+            ohos:left_margin="30vp"
+            ohos:background_element="$media:upgrade"/>
+
+        <!--<Image
+            ohos:left_margin="45vp"
+            ohos:top_padding="40vp"
+            ohos:height="50vp"
+            ohos:width="50vp"
+            ohos:image_src="$media:upgrade"></Image>-->
+    </DirectionalLayout>
+
+    <!--        数据统计-->
+    <DirectionalLayout
+        ohos:left_margin="10vp"
+        ohos:height="match_parent"
+        ohos:width="165vp"
+        ohos:orientation="horizontal"
+        ohos:alignment="vertical_center"
+        ohos:background_element="$graphic:background_common">
+        <Text
+            ohos:left_padding="10vp"
+            ohos:height="match_content"
+            ohos:width="match_content"
+            ohos:text="数据统计"
+            ohos:text_size="20vp"></Text>
+
+        <Button
+            ohos:id="$+id:btn_data"
+            ohos:height="40vp"
+            ohos:width="40vp"
+            ohos:left_margin="30vp"
+            ohos:background_element="$media:data"/>
+
+        <!--<Image
+            ohos:left_margin="45vp"
+            ohos:top_padding="40vp"
+            ohos:height="50vp"
+            ohos:width="50vp"
+            ohos:image_src="$media:data"></Image>-->
+    </DirectionalLayout>
+
+</DirectionalLayout>

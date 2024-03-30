@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_content"
+    ohos:width="match_content"
+    ohos:orientation="vertical"
+    ohos:background_element="$graphic:background_toast_common">
+
+    <Text
+        ohos:id="$+id:text_title"
+        ohos:top_padding="15vp"
+        ohos:left_padding="22vp"
+        ohos:height="50vp"
+        ohos:width="340vp"
+        ohos:text="万达康用户隐私协议"
+        ohos:text_size="20vp"
+        ohos:text_weight="500"/>
+
+    <ScrollView
+        ohos:top_margin="10vp"
+        ohos:height="350vp"
+        ohos:width="match_parent">
+
+        <Text
+            ohos:id="$+id:text_tip_info"
+            ohos:left_padding="20vp"
+            ohos:top_margin="15vp"
+            ohos:height="match_content"
+            ohos:width="330vp"
+            ohos:text_size="15vp"
+            ohos:text_weight="400"
+            ohos:multiple_lines="true"
+            ohos:line_height_num="1.1"
+            ohos:text=""/>
+
+    </ScrollView>
+
+    <DirectionalLayout
+        ohos:top_margin="10vp"
+        ohos:height="match_content"
+        ohos:width="match_parent"
+        ohos:orientation="horizontal"
+        ohos:alignment="vertical_center">
+
+        <DirectionalLayout
+            ohos:height="match_content"
+            ohos:width="match_parent"
+            ohos:orientation="horizontal"
+            ohos:alignment="center">
+            <Button
+                ohos:id="$+id:btn_known"
+                ohos:height="50vp"
+                ohos:width="60vp"
+                ohos:text="知道了"
+                ohos:text_size="20vp"
+                ohos:text_color="#0A59F7"
+                ohos:text_weight="500"></Button>
+        </DirectionalLayout>
+
+
+    </DirectionalLayout>
+
+
+
+</DirectionalLayout>

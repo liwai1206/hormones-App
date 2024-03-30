@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_content"
+    ohos:width="match_content"
+    ohos:orientation="vertical"
+    ohos:background_element="$graphic:background_toast_common">
+
+<!--    标题-->
+    <Text
+        ohos:top_padding="15vp"
+        ohos:left_padding="20vp"
+        ohos:height="match_content"
+        ohos:width="340vp"
+        ohos:text="所属空间"
+        ohos:text_size="20vp"/>
+
+    <ScrollView
+        ohos:height="300vp"
+        ohos:width="match_parent"
+        ohos:top_margin="15vp">
+
+        <RadioContainer
+            ohos:id="$+id:radioContainer"
+            ohos:height="match_content"
+            ohos:width="match_parent"
+            ohos:orientation="vertical"
+            ohos:alignment="vertical_center">
+
+            <RadioButton
+                ohos:height="60vp"
+                ohos:width="320vp"
+                ohos:text_alignment="vertical_center"
+                ohos:text="客厅"
+                ohos:text_size="18vp"
+                ohos:text_weight="500"
+                ohos:text_color_on="#0A59F7"
+                ohos:left_padding="10vp"
+                ohos:element_right="$media:radio_unSelect"
+                ohos:check_element="$graphic:radio_state_checked">
+            </RadioButton>
+            <Button
+                ohos:height="1vp"
+                ohos:width="300vp"
+                ohos:left_margin="23vp"
+                ohos:background_element="#E8E9E9"/>
+
+            <RadioButton
+                ohos:height="60vp"
+                ohos:width="320vp"
+                ohos:text_alignment="vertical_center"
+                ohos:text="次卧"
+                ohos:text_size="18vp"
+                ohos:text_color_on="#0A59F7"
+                ohos:left_padding="10vp"
+                ohos:element_right="$media:radio_unSelect"
+                ohos:check_element="$graphic:radio_state_checked">></RadioButton>
+            <Button
+                ohos:height="1vp"
+                ohos:width="300vp"
+                ohos:left_margin="23vp"
+                ohos:background_element="#E8E9E9"/>
+
+            <RadioButton
+                ohos:height="60vp"
+                ohos:width="320vp"
+                ohos:text_alignment="vertical_center"
+                ohos:text="走廊"
+                ohos:text_size="18vp"
+                ohos:text_color_on="#0A59F7"
+                ohos:left_padding="10vp"
+                ohos:element_right="$media:radio_unSelect"
+                ohos:check_element="$graphic:radio_state_checked">></RadioButton>
+            <Button
+                ohos:height="1vp"
+                ohos:width="300vp"
+                ohos:left_margin="23vp"
+                ohos:background_element="#E8E9E9"/>
+
+            <RadioButton
+                ohos:height="60vp"
+                ohos:width="320vp"
+                ohos:text_alignment="vertical_center"
+                ohos:text="办公区"
+                ohos:text_size="18vp"
+                ohos:text_color_on="#0A59F7"
+                ohos:left_padding="10vp"
+                ohos:element_right="$media:radio_unSelect"
+                ohos:check_element="$graphic:radio_state_checked">></RadioButton>
+            <Button
+                ohos:height="1vp"
+                ohos:width="300vp"
+                ohos:left_margin="23vp"
+                ohos:background_element="#E8E9E9"/>
+
+            <RadioButton
+                ohos:height="60vp"
+                ohos:width="320vp"
+                ohos:text_alignment="vertical_center"
+                ohos:text="天台"
+                ohos:text_size="18vp"
+                ohos:text_color_on="#0A59F7"
+                ohos:left_padding="10vp"
+                ohos:element_right="$media:radio_unSelect"
+                ohos:check_element="$graphic:radio_state_checked">></RadioButton>
+            <Button
+                ohos:height="1vp"
+                ohos:width="300vp"
+                ohos:left_margin="23vp"
+                ohos:background_element="#E8E9E9"/>
+
+            <RadioButton
+                ohos:height="60vp"
+                ohos:width="320vp"
+                ohos:text_alignment="vertical_center"
+                ohos:text="车内"
+                ohos:text_size="18vp"
+                ohos:text_color_on="#0A59F7"
+                ohos:left_padding="10vp"
+                ohos:element_right="$media:radio_unSelect"
+                ohos:check_element="$graphic:radio_state_checked">></RadioButton>
+
+        </RadioContainer>
+
+    </ScrollView>
+
+    <!--     添加房间按钮-->
+    <DirectionalLayout
+        ohos:height="30vp"
+        ohos:width="match_parent"
+        ohos:top_margin="10vp"
+        ohos:orientation="horizontal"
+        ohos:alignment="vertical_center">
+
+        <Button
+            ohos:id="$+id:btn_add_room"
+            ohos:height="match_parent"
+            ohos:width="match_parent"
+            ohos:text_alignment="left"
+            ohos:left_padding="15vp"
+            ohos:text="添加房间"
+            ohos:text_size="14vp"
+            ohos:text_weight="500"
+            ohos:text_color="#0A59F7"/>
+    </DirectionalLayout>
+
+<!--    取消按钮-->
+    <DirectionalLayout
+        ohos:top_margin="15vp"
+        ohos:height="match_content"
+        ohos:width="match_parent"
+        ohos:orientation="horizontal"
+        ohos:alignment="center"
+        ohos:bottom_padding="10vp">
+
+            <Button
+                ohos:id="$+id:btn_cancel"
+                ohos:height="40vp"
+                ohos:width="60vp"
+                ohos:text="取消"
+                ohos:text_size="20vp"
+                ohos:text_color="#0A59F7"></Button>
+
+    </DirectionalLayout>
+
+
+</DirectionalLayout>

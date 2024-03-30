@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:orientation="vertical"
+    ohos:alignment="horizontal_center">
+
+
+    <!-- 自定义一个标题栏    -->
+    <DirectionalLayout
+        ohos:top_margin="20vp"
+        ohos:height="60vp"
+        ohos:width="340vp"
+        ohos:orientation="horizontal">
+
+        <!-- 左箭头和文字 -->
+        <DirectionalLayout
+            ohos:height="match_parent"
+            ohos:width="300vp"
+            ohos:orientation="horizontal"
+            ohos:alignment="vertical_center">
+
+            <Button
+                ohos:left_padding="5vp"
+                ohos:height="30vp"
+                ohos:width="30vp"
+                ohos:background_element="$media:left_arrow"/>
+
+            <Text
+                ohos:left_margin="5vp"
+                ohos:height="match_parent"
+                ohos:width="match_content"
+                ohos:text="万达康跳绳机"
+                ohos:text_size="20vp"></Text>
+
+        </DirectionalLayout>
+
+        <!-- 设置按钮 -->
+        <DirectionalLayout
+            ohos:height="match_parent"
+            ohos:width="40vp"
+            ohos:orientation="horizontal"
+            ohos:alignment="vertical_center">
+
+            <Button
+                ohos:id="$+id:toSetting"
+                ohos:height="32vp"
+                ohos:width="32vp"
+                ohos:background_element="$media:setting"/>
+
+        </DirectionalLayout>
+    </DirectionalLayout>
+
+    <!-- 橙色区域-->
+    <DirectionalLayout
+        ohos:id="$+id:tip_lowTen"
+        ohos:visibility="hide"
+        ohos:top_margin="10vp"
+        ohos:height="60vp"
+        ohos:width="340vp"
+        ohos:orientation="horizontal"
+        ohos:alignment="vertical_center"
+        ohos:background_element="$graphic:background_lowcharge_tip01">
+
+        <DirectionalLayout
+            ohos:height="match_parent"
+            ohos:width="50vp"
+            ohos:orientation="horizontal"
+            ohos:alignment="center">
+
+            <Button
+                ohos:height="30vp"
+                ohos:width="30vp"
+                ohos:background_element="$media:attention"/>
+        </DirectionalLayout>
+
+
+        <DirectionalLayout
+            ohos:height="match_parent"
+            ohos:width="280vp"
+            ohos:orientation="horizontal"
+            ohos:alignment="center">
+
+            <Text
+                ohos:height="match_content"
+                ohos:width="match_parent"
+                ohos:text="电池电量低，请及时充电！"
+                ohos:text_color="#ED6F21"
+                ohos:text_size="16vp"
+                ohos:text_weight="400"
+                ohos:multiple_lines="true"
+                ohos:line_height_num="1.1"/>
+
+        </DirectionalLayout>
+
+
+    </DirectionalLayout>
+
+    <!-- 橙色区域-->
+    <DirectionalLayout
+        ohos:id="$+id:tip_shutdown"
+        ohos:visibility="hide"
+        ohos:top_margin="10vp"
+        ohos:height="60vp"
+        ohos:width="340vp"
+        ohos:orientation="horizontal"
+        ohos:alignment="vertical_center"
+        ohos:background_element="$graphic:background_lowcharge_tip02">
+
+        <DirectionalLayout
+            ohos:height="match_parent"
+            ohos:width="50vp"
+            ohos:orientation="horizontal"
+            ohos:alignment="center">
+
+            <Button
+                ohos:height="30vp"
+                ohos:width="30vp"
+                ohos:background_element="$media:attention_red"/>
+        </DirectionalLayout>
+
+
+        <DirectionalLayout
+            ohos:height="match_parent"
+            ohos:width="280vp"
+            ohos:orientation="horizontal"
+            ohos:alignment="center">
+
+            <Text
+                ohos:height="match_content"
+                ohos:width="match_parent"
+                ohos:text="设备电量低，即将关机！"
+                ohos:text_color="#E84026"
+                ohos:text_size="16vp"
+                ohos:text_weight="400"
+                ohos:multiple_lines="true"
+                ohos:line_height_num="1.1"/>
+
+        </DirectionalLayout>
+
+
+    </DirectionalLayout>
+
+    <!-- 最上面的图片 -->
+    <Image
+        ohos:height="300vp"
+        ohos:width="300vp"
+        ohos:top_padding="10vp"
+        ohos:scale_mode="stretch"
+        ohos:image_src="$media:wandakang"></Image>
+
+    <!-- 运动状态 -->
+    <DirectionalLayout
+        ohos:id="$+id:connection_state"
+        ohos:height="100vp"
+        ohos:width="340vp"
+        ohos:orientation="vertical"
+        ohos:top_margin="10vp">
+
+    </DirectionalLayout>
+
+    <StackLayout
+        ohos:height="115vp"
+        ohos:width="340vp"
+        ohos:top_margin="10vp">
+
+        <!--    速度、圈数等信息 -->
+        <PageSlider
+            ohos:id="$+id:page_slider"
+            ohos:height="match_parent"
+            ohos:width="match_parent"/>
+
+        <PageSliderIndicator
+            ohos:id="$+id:indicator"
+            ohos:height="match_content"
+            ohos:width="match_content"
+            ohos:layout_alignment="bottom|horizontal_center"
+            ohos:bottom_margin="13vp" />
+    </StackLayout>
+
+
+    <!--    模式、定时-->
+    <DirectionalLayout
+        ohos:id="$+id:mode_time"
+        ohos:height="110vp"
+        ohos:width="340vp"
+        ohos:orientation="vertical"
+        ohos:top_margin="10vp">
+
+    </DirectionalLayout>
+
+    <!-- 调速 ，档位-->
+    <DirectionalLayout
+        ohos:id="$+id:speed_gear"
+        ohos:height="80vp"
+        ohos:width="340vp"
+        ohos:orientation="horizontal"
+        ohos:top_margin="10vp">
+
+    </DirectionalLayout>
+
+    <!--    固件升级、数据统计-->
+    <DirectionalLayout
+        ohos:id="$+id:upgrade_data"
+        ohos:height="80vp"
+        ohos:width="340vp"
+        ohos:orientation="horizontal"
+        ohos:top_margin="10vp">
+    </DirectionalLayout>
+
+    <!--    使用视频、背景音乐-->
+    <DirectionalLayout
+        ohos:height="match_content"
+        ohos:width="340vp"
+        ohos:orientation="vertical"
+        ohos:top_margin="40vp">
+
+        <DirectionalLayout
+            ohos:height="match_content"
+            ohos:width="340vp"
+            ohos:orientation="horizontal"
+            ohos:bottom_margin="10vp">
+
+            <DirectionalLayout
+                ohos:left_padding="10vp"
+                ohos:height="match_parent"
+                ohos:width="match_content"
+                ohos:orientation="vertical"
+                ohos:alignment="horizontal_center">
+                <Button
+                    ohos:id="$+id:btn_use_video"
+                    ohos:height="match_content"
+                    ohos:width="match_content"
+                    ohos:text="使用视频"
+                    ohos:text_color="#0A59F7"
+                    ohos:text_alignment="center"
+                    ohos:text_size="20vp"></Button>
+
+                <Button
+                    ohos:id="$+id:btn_use_video_line"
+                    ohos:top_margin="5vp"
+                    ohos:height="4vp"
+                    ohos:width="80vp"
+                    ohos:background_element="#0A59F7"></Button>
+
+            </DirectionalLayout>
+
+            <DirectionalLayout
+                ohos:left_padding="30vp"
+                ohos:height="match_parent"
+                ohos:width="match_content"
+                ohos:orientation="vertical"
+                ohos:alignment="horizontal_center">
+                <Button
+                    ohos:id="$+id:btn_use_music"
+                    ohos:height="match_content"
+                    ohos:width="match_content"
+                    ohos:text="背景音乐"
+                    ohos:text_alignment="center"
+                    ohos:text_size="20vp"></Button>
+
+                <Button
+                    ohos:id="$+id:btn_use_music_line"
+                    ohos:top_margin="5vp"
+                    ohos:height="4vp"
+                    ohos:width="80vp"
+                    ohos:background_element="#F0F2F4"></Button>
+
+            </DirectionalLayout>
+
+
+
+        </DirectionalLayout>
+
+
+        <!--        显示音乐或者视频-->
+        <DirectionalLayout
+            ohos:id="$+id:video_music"
+            ohos:height="match_content"
+            ohos:width="match_parent"
+            ohos:orientation="horizontal">
+
+        </DirectionalLayout>
+
+    </DirectionalLayout>
+
+    <!--        售后服务-->
+    <DirectionalLayout
+        ohos:height="match_content"
+        ohos:width="340vp"
+        ohos:orientation="vertical"
+        ohos:top_margin="40vp"
+        ohos:bottom_padding="20vp">
+
+        <DirectionalLayout
+            ohos:height="match_content"
+            ohos:width="340vp"
+            ohos:orientation="horizontal"
+            ohos:bottom_margin="10vp">
+            <Text
+                ohos:left_padding="10vp"
+                ohos:height="match_content"
+                ohos:width="match_content"
+                ohos:text="售后服务"
+                ohos:text_size="20vp"></Text>
+
+        </DirectionalLayout>
+
+        <DirectionalLayout
+            ohos:height="90vp"
+            ohos:width="match_parent"
+            ohos:orientation="horizontal"
+            ohos:background_element="$graphic:background_common">
+
+            <DirectionalLayout
+                ohos:height="match_parent"
+                ohos:width="260vp"
+                ohos:orientation="vertical"
+                ohos:alignment="left">
+
+                <Text
+                    ohos:left_padding="20vp"
+                    ohos:top_padding="20vp"
+                    ohos:height="match_content"
+                    ohos:width="match_content"
+                    ohos:text="客服热线"
+                    ohos:text_size="20vp"></Text>
+
+                <Text
+                    ohos:left_padding="20vp"
+                    ohos:height="match_content"
+                    ohos:width="match_content"
+                    ohos:text="XXX-XX-XXXX"
+                    ohos:text_size="15vp"
+                    ohos:text_color="#52594E"></Text>
+
+            </DirectionalLayout>
+
+            <DirectionalLayout
+                ohos:height="match_parent"
+                ohos:width="80vp"
+                ohos:orientation="horizontal"
+                ohos:alignment="center">
+
+                <Button
+                    ohos:height="30vp"
+                    ohos:width="30vp"
+                    ohos:background_element="$media:service"></Button>
+            </DirectionalLayout>
+        </DirectionalLayout>
+
+    </DirectionalLayout>
+
+</DirectionalLayout>

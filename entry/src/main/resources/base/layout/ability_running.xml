@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:orientation="horizontal"
+    ohos:background_element="$graphic:background_common"
+    ohos:alignment="horizontal_center"
+    ohos:top_padding="10vp">
+
+    <DirectionalLayout
+        ohos:height="match_parent"
+        ohos:width="120vp"
+        ohos:orientation="horizontal"
+        ohos:alignment="left">
+        <Text
+            ohos:height="match_content"
+            ohos:width="match_content"
+            ohos:text="运动中"
+            ohos:top_padding="25vp"
+            ohos:left_padding="20vp"
+            ohos:text_size="20fp" />
+    </DirectionalLayout>
+
+    <DirectionalLayout
+        ohos:height="match_parent"
+        ohos:width="120vp"
+        ohos:orientation="vertical"
+        ohos:alignment="horizontal_center">
+        <Text
+            ohos:id="$+id:running_time"
+            ohos:height="match_content"
+            ohos:width="match_content"
+            ohos:text="00:00:00"
+            ohos:top_padding="10vp"
+            ohos:text_size="25fp"
+            ohos:hint="running"/>
+
+        <Text
+            ohos:height="match_content"
+            ohos:width="match_content"
+            ohos:text="运动时间"
+            ohos:top_padding="5vp"
+            ohos:text_size="15fp"
+            ohos:text_color="#52594E"/>
+
+    </DirectionalLayout>
+
+
+    <DirectionalLayout
+        ohos:height="match_parent"
+        ohos:width="100vp"
+        ohos:orientation="horizontal"
+        ohos:alignment="horizontal_center">
+
+        <Button
+            ohos:id="$+id:running_close"
+            ohos:height="40vp"
+            ohos:width="40vp"
+            ohos:top_margin="15vp"
+            ohos:right_margin="10vp"
+            ohos:background_element="$media:close"/>
+
+        <Button
+            ohos:id="$+id:running_stop"
+            ohos:height="40vp"
+            ohos:width="40vp"
+            ohos:top_margin="15vp"
+            ohos:right_margin="5vp"
+            ohos:background_element="$media:stop"/>
+
+        <!--<Image
+            ohos:height="match_content"
+            ohos:width="match_content"
+            ohos:top_padding="20vp"
+            ohos:image_src="$media:icon"/>
+
+        <Image
+            ohos:left_margin="15vp"
+            ohos:height="match_content"
+            ohos:width="match_content"
+            ohos:top_padding="20vp"
+            ohos:image_src="$media:icon"/>-->
+    </DirectionalLayout>
+
+
+</DirectionalLayout>

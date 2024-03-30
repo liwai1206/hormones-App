@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:orientation="horizontal"
+    ohos:background_element="$graphic:background_common"
+    ohos:alignment="horizontal_center"
+    ohos:top_padding="10vp">
+
+    <DirectionalLayout
+        ohos:height="match_parent"
+        ohos:width="match_parent"
+        ohos:orientation="horizontal"
+        ohos:alignment="left">
+
+        <Text
+            ohos:height="match_content"
+            ohos:width="match_content"
+            ohos:text="充电中"
+            ohos:top_padding="25vp"
+            ohos:left_padding="20vp"
+            ohos:text_size="20fp"/>
+    </DirectionalLayout>
+
+</DirectionalLayout>

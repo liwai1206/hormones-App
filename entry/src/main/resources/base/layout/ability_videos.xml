@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:background_element="$graphic:background_common"
+    ohos:orientation="vertical">
+
+    <DirectionalLayout
+        ohos:height="100vp"
+        ohos:width="match_parent"
+        ohos:orientation="horizontal"
+        ohos:alignment="vertical_center"
+        ohos:top_padding="5vp">
+
+<!--        最前面的图片-->
+        <DirectionalLayout
+            ohos:height="match_parent"
+            ohos:width="100vp"
+            ohos:orientation="vertical"
+            ohos:alignment="center"
+            ohos:left_padding="10vp">
+
+            <Button
+                ohos:height="50vp"
+                ohos:width="100vp"
+                ohos:background_element="$graphic:background_image"/>
+
+            <!--<Image
+                ohos:height="match_content"
+                ohos:width="match_content"
+                ohos:image_src="$media:icon"></Image>-->
+        </DirectionalLayout>
+
+<!--        中间部分-->
+        <DirectionalLayout
+            ohos:height="match_parent"
+            ohos:width="150vp"
+            ohos:orientation="vertical"
+            ohos:alignment="left">
+
+            <DirectionalLayout
+                ohos:height="match_content"
+                ohos:width="match_parent"
+                ohos:orientation="horizontal"
+                ohos:alignment="left"
+                ohos:layout_alignment="vertical_center"
+                ohos:left_padding="15vp"
+                ohos:top_padding="12vp">
+                <Text
+                    ohos:height="match_content"
+                    ohos:width="match_content"
+                    ohos:top_padding="12vp"
+                    ohos:text="使用视频 "
+                    ohos:text_size="18vp"></Text>
+                <Image
+                    ohos:height="30vp"
+                    ohos:width="30vp"
+                    ohos:top_padding="18vp"
+                    ohos:scale_mode="zoom_center"
+                    ohos:image_src="$media:video"
+                    ohos:visibility="hide"/>
+            </DirectionalLayout>
+
+            <DirectionalLayout
+                ohos:height="match_content"
+                ohos:width="match_parent"
+                ohos:orientation="horizontal"
+                ohos:alignment="left"
+                ohos:left_padding="15vp">
+                <Text
+                    ohos:height="match_content"
+                    ohos:width="match_content"
+                    ohos:text="视频"
+                    ohos:text_size="15vp"
+                    ohos:text_color="#52594E"></Text>
+            </DirectionalLayout>
+
+        </DirectionalLayout>
+
+<!--        最右边的按钮-->
+        <DirectionalLayout
+            ohos:height="match_parent"
+            ohos:width="90vp"
+            ohos:orientation="horizontal"
+            ohos:alignment="center">
+            <Button
+                ohos:id="$+id:btn_video_start01"
+                ohos:right_padding="10vp"
+                ohos:height="35vp"
+                ohos:width="70vp"
+                ohos:text="   播 放"
+                ohos:hint="resources/rawfile/video01.mp4"
+                ohos:text_color="blue"
+                ohos:text_size="15vp"
+                ohos:background_element="$graphic:background_button_nouse"></Button>
+        </DirectionalLayout>
+
+    </DirectionalLayout>
+
+    <Button
+        ohos:right_margin="10vp"
+        ohos:height="1vp"
+        ohos:width="220vp"
+        ohos:layout_alignment="right"
+        ohos:background_element="#F2F2F2"/>
+
+    <DirectionalLayout
+        ohos:height="100vp"
+        ohos:width="match_parent"
+        ohos:orientation="horizontal"
+        ohos:alignment="vertical_center"
+        ohos:top_padding="5vp">
+
+        <!--        最前面的图片-->
+        <DirectionalLayout
+            ohos:height="match_parent"
+            ohos:width="100vp"
+            ohos:orientation="vertical"
+            ohos:alignment="center"
+            ohos:left_padding="10vp">
+
+            <Button
+                ohos:height="50vp"
+                ohos:width="100vp"
+                ohos:background_element="$graphic:background_image"/>
+
+            <!--<Image
+                ohos:height="match_content"
+                ohos:width="match_content"
+                ohos:image_src="$media:icon"></Image>-->
+        </DirectionalLayout>
+
+        <!--        中间部分-->
+        <DirectionalLayout
+            ohos:height="match_parent"
+            ohos:width="150vp"
+            ohos:orientation="vertical"
+            ohos:alignment="left">
+
+            <DirectionalLayout
+                ohos:height="match_content"
+                ohos:width="match_parent"
+                ohos:orientation="horizontal"
+                ohos:alignment="left"
+                ohos:left_padding="15vp"
+                ohos:top_padding="12vp">
+                <Text
+                    ohos:height="match_content"
+                    ohos:width="match_content"
+                    ohos:top_padding="12vp"
+                    ohos:text="使用视频 "
+                    ohos:text_size="18vp"></Text>
+                <Image
+                    ohos:height="30vp"
+                    ohos:width="30vp"
+                    ohos:top_padding="18vp"
+                    ohos:scale_mode="zoom_center"
+                    ohos:image_src="$media:video"
+                    ohos:visibility="hide"/>
+
+            </DirectionalLayout>
+
+            <DirectionalLayout
+                ohos:height="match_content"
+                ohos:width="match_parent"
+                ohos:orientation="horizontal"
+                ohos:alignment="left"
+                ohos:left_padding="15vp">
+                <Text
+                    ohos:height="match_content"
+                    ohos:width="match_content"
+                    ohos:text="视频"
+                    ohos:text_size="15vp"
+                    ohos:text_color="#52594E"></Text>
+            </DirectionalLayout>
+
+        </DirectionalLayout>
+
+        <!--        最右边的按钮-->
+        <DirectionalLayout
+            ohos:height="match_parent"
+            ohos:width="90vp"
+            ohos:orientation="horizontal"
+            ohos:alignment="center">
+            <Button
+                ohos:id="$+id:btn_video_start02"
+                ohos:right_padding="10vp"
+                ohos:height="35vp"
+                ohos:width="70vp"
+                ohos:hint="resources/rawfile/video02.mp4"
+                ohos:text="   播 放"
+                ohos:text_color="blue"
+                ohos:text_size="15vp"
+                ohos:background_element="$graphic:background_button_nouse"></Button>
+        </DirectionalLayout>
+
+    </DirectionalLayout>
+
+    <Button
+        ohos:right_margin="10vp"
+        ohos:height="1vp"
+        ohos:width="220vp"
+        ohos:layout_alignment="right"
+        ohos:background_element="#F2F2F2"/>
+
+    <DirectionalLayout
+        ohos:height="100vp"
+        ohos:width="match_parent"
+        ohos:orientation="horizontal"
+        ohos:alignment="vertical_center"
+        ohos:top_padding="5vp">
+
+        <!--        最前面的图片-->
+        <DirectionalLayout
+            ohos:height="match_parent"
+            ohos:width="100vp"
+            ohos:orientation="vertical"
+            ohos:alignment="center"
+            ohos:left_padding="10vp">
+
+            <Button
+                ohos:height="50vp"
+                ohos:width="100vp"
+                ohos:background_element="$graphic:background_image"/>
+
+            <!--<Image
+                ohos:height="match_content"
+                ohos:width="match_content"
+                ohos:image_src="$media:icon"></Image>-->
+        </DirectionalLayout>
+
+        <!--        中间部分-->
+        <DirectionalLayout
+            ohos:height="match_parent"
+            ohos:width="150vp"
+            ohos:orientation="vertical"
+            ohos:alignment="left">
+
+            <DirectionalLayout
+                ohos:height="match_content"
+                ohos:width="match_parent"
+                ohos:orientation="horizontal"
+                ohos:alignment="left"
+                ohos:left_padding="15vp"
+                ohos:top_padding="12vp">
+                <Text
+                    ohos:height="match_content"
+                    ohos:width="match_content"
+                    ohos:top_padding="12vp"
+                    ohos:text="使用视频 "
+                    ohos:text_size="18vp"></Text>
+
+                <Image
+                    ohos:height="30vp"
+                    ohos:width="30vp"
+                    ohos:top_padding="18vp"
+                    ohos:scale_mode="zoom_center"
+                    ohos:image_src="$media:video"
+                    ohos:visibility="hide"/>
+            </DirectionalLayout>
+
+            <DirectionalLayout
+                ohos:height="match_content"
+                ohos:width="match_parent"
+                ohos:orientation="horizontal"
+                ohos:alignment="left"
+                ohos:left_padding="15vp">
+                <Text
+                    ohos:height="match_content"
+                    ohos:width="match_content"
+                    ohos:text="视频"
+                    ohos:text_size="15vp"
+                    ohos:text_color="#52594E"></Text>
+            </DirectionalLayout>
+
+        </DirectionalLayout>
+
+        <!--        最右边的按钮-->
+        <DirectionalLayout
+            ohos:height="match_parent"
+            ohos:width="90vp"
+            ohos:orientation="horizontal"
+            ohos:alignment="center">
+            <Button
+                ohos:id="$+id:btn_video_start03"
+                ohos:right_padding="10vp"
+                ohos:height="35vp"
+                ohos:width="70vp"
+                ohos:text="   播 放"
+                ohos:hint="resources/rawfile/video03.mp4"
+                ohos:text_color="blue"
+                ohos:text_size="15vp"
+                ohos:background_element="$graphic:background_button_nouse"></Button>
+        </DirectionalLayout>
+
+    </DirectionalLayout>
+
+
+</DirectionalLayout>

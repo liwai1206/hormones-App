@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_content"
+    ohos:width="match_content"
+    ohos:orientation="vertical"
+    ohos:background_element="$graphic:background_toast_common">
+
+    <Text
+        ohos:id="$+id:text_title"
+        ohos:top_padding="15vp"
+        ohos:left_padding="22vp"
+        ohos:height="match_content"
+        ohos:width="340vp"
+        ohos:text="连接超时"
+        ohos:text_size="20vp"
+        ohos:text_weight="500"/>
+
+
+    <Text
+        ohos:left_padding="22vp"
+        ohos:top_margin="10vp"
+        ohos:height="match_content"
+        ohos:width="330vp"
+        ohos:text_size="17vp"
+        ohos:text_weight="400"
+        ohos:text="请尝试以下操作："/>
+
+    <DirectionalLayout
+        ohos:top_margin="10vp"
+        ohos:height="match_content"
+        ohos:width="match_parent"
+        ohos:orientation="vertical"
+        ohos:layout_alignment="left"
+        ohos:alignment="left">
+
+        <Text
+            ohos:left_padding="22vp"
+            ohos:height="match_content"
+            ohos:width="330vp"
+            ohos:text_size="15vp"
+            ohos:text_weight="400"
+            ohos:text="1. 请确认手机蓝牙是否打开"/>
+
+        <Text
+            ohos:left_padding="22vp"
+            ohos:height="match_content"
+            ohos:width="330vp"
+            ohos:text_size="15vp"
+            ohos:text_weight="400"
+            ohos:text="2. 请确认手机与设备的距离是否小于5米"/>
+
+        <Text
+            ohos:left_padding="22vp"
+            ohos:height="match_content"
+            ohos:width="330vp"
+            ohos:text_size="15vp"
+            ohos:text_weight="400"
+            ohos:text="3. 请确认手机网络是否畅通"/>
+
+        <Text
+            ohos:left_padding="22vp"
+            ohos:height="match_content"
+            ohos:width="330vp"
+            ohos:text_size="15vp"
+            ohos:text_weight="400"
+            ohos:text="4. 请确认设备是否开启"/>
+
+    </DirectionalLayout>
+
+    <DirectionalLayout
+        ohos:top_margin="20vp"
+        ohos:height="match_content"
+        ohos:width="match_parent"
+        ohos:orientation="horizontal"
+        ohos:alignment="vertical_center">
+
+        <DirectionalLayout
+            ohos:height="40vp"
+            ohos:width="169vp"
+            ohos:orientation="horizontal"
+            ohos:alignment="center">
+            <Button
+                ohos:id="$+id:btn_wait_try"
+                ohos:height="match_parent"
+                ohos:width="match_parent"
+                ohos:text="稍后再试"
+                ohos:text_size="18vp"
+                ohos:text_color="#0A59F7"
+                ohos:text_alignment="center"
+                ohos:text_weight="500"></Button>
+        </DirectionalLayout>
+
+        <Button
+            ohos:height="20vp"
+            ohos:width="1vp"
+            ohos:background_element="#CDCDCD"/>
+
+        <DirectionalLayout
+            ohos:height="40vp"
+            ohos:width="169vp"
+            ohos:orientation="horizontal"
+            ohos:alignment="center">
+            <Button
+                ohos:id="$+id:btn_reconnect"
+                ohos:height="match_parent"
+                ohos:width="match_parent"
+                ohos:text="重新连接"
+                ohos:text_size="18vp"
+                ohos:text_color="#0A59F7"
+                ohos:text_alignment="center"
+                ohos:text_weight="500"></Button>
+        </DirectionalLayout>
+    </DirectionalLayout>
+
+
+
+</DirectionalLayout>

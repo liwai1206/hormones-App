@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_content"
+    ohos:width="match_content"
+    ohos:orientation="vertical"
+    ohos:alignment="horizontal_center"
+    ohos:background_element="$graphic:background_toast_common">
+
+    <Text
+        ohos:id="$+id:text_title"
+        ohos:top_padding="15vp"
+        ohos:left_padding="22vp"
+        ohos:height="match_content"
+        ohos:width="340vp"
+        ohos:text="自定义定时"
+        ohos:text_size="20vp"
+        ohos:text_weight="500"/>
+
+
+    <Picker
+        ohos:id="$+id:picker_time"
+        ohos:height="200vp"
+        ohos:width="300vp"
+        ohos:min_value="1"
+        ohos:max_value="90"
+        ohos:value="1"
+        ohos:normal_text_size="15vp"
+        ohos:normal_text_color="#626363"
+        ohos:selected_text_size="25vp"
+        ohos:selected_text_color="#0F5CF6"
+        ohos:selector_item_num="5"
+        ohos:top_line_element="#C8C9C9"
+        ohos:bottom_line_element="#C8C9C9"
+        ohos:wheel_mode_enabled="true"/>
+
+    <DirectionalLayout
+        ohos:top_margin="15vp"
+        ohos:height="match_content"
+        ohos:width="match_parent"
+        ohos:orientation="horizontal"
+        ohos:alignment="vertical_center">
+
+        <DirectionalLayout
+            ohos:height="match_content"
+            ohos:width="169vp"
+            ohos:orientation="horizontal"
+            ohos:alignment="center">
+            <Button
+                ohos:id="$+id:btn_cancel"
+                ohos:height="40vp"
+                ohos:width="60vp"
+                ohos:text="取消"
+                ohos:text_size="20vp"
+                ohos:text_color="#0A59F7"
+                ohos:text_weight="500"></Button>
+        </DirectionalLayout>
+
+        <Button
+            ohos:height="30vp"
+            ohos:width="1vp"
+            ohos:background_element="#CDCDCD"/>
+
+        <DirectionalLayout
+            ohos:height="match_content"
+            ohos:width="169vp"
+            ohos:orientation="horizontal"
+            ohos:alignment="center">
+            <Button
+                ohos:id="$+id:btn_ok"
+                ohos:height="40vp"
+                ohos:width="60vp"
+                ohos:text="确定"
+                ohos:text_size="20vp"
+                ohos:text_color="#0A59F7"
+                ohos:text_weight="500"></Button>
+        </DirectionalLayout>
+    </DirectionalLayout>
+
+
+
+</DirectionalLayout>

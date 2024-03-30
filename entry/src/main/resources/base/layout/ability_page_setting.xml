@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:orientation="vertical"
+    ohos:alignment="horizontal_center"
+    ohos:background_element="#F0F2F4">
+
+    <!-- 自定义一个标题栏    -->
+    <DirectionalLayout
+        ohos:top_margin="20vp"
+        ohos:height="60vp"
+        ohos:width="340vp"
+        ohos:orientation="horizontal">
+
+        <!-- 左箭头和文字 -->
+        <DirectionalLayout
+            ohos:height="match_parent"
+            ohos:width="340vp"
+            ohos:orientation="horizontal"
+            ohos:alignment="vertical_center">
+
+            <Button
+                ohos:id="$+id:btn_setting_back"
+                ohos:left_padding="10vp"
+                ohos:height="32vp"
+                ohos:width="32vp"
+                ohos:background_element="$media:left_arrow"/>
+
+            <Text
+                ohos:left_margin="10vp"
+                ohos:height="match_parent"
+                ohos:width="match_content"
+                ohos:text="设置"
+                ohos:text_size="20vp"></Text>
+
+        </DirectionalLayout>
+
+    </DirectionalLayout>
+
+
+    <!-- 详细设置    -->
+    <DirectionalLayout
+        ohos:height="match_content"
+        ohos:width="340vp"
+        ohos:top_margin="10vp"
+        ohos:orientation="vertical"
+        ohos:background_element="$graphic:background_common">
+
+<!--        设备名称-->
+        <DirectionalLayout
+            ohos:id="$+id:device_name"
+            ohos:height="60vp"
+            ohos:width="340vp"
+            ohos:orientation="horizontal"
+            ohos:alignment="vertical_center"
+            ohos:top_padding="5vp">
+
+            <!--        最前面的文字-->
+            <DirectionalLayout
+                ohos:height="match_parent"
+                ohos:width="100vp"
+                ohos:orientation="vertical"
+                ohos:alignment="left"
+                ohos:left_padding="10vp">
+
+                <Text
+                    ohos:height="match_parent"
+                    ohos:width="match_content"
+                    ohos:text="设备名称"
+                    ohos:text_size="18vp"/>
+            </DirectionalLayout>
+
+            <!--        中间部分-->
+            <DirectionalLayout
+                ohos:height="match_parent"
+                ohos:width="200vp"
+                ohos:orientation="vertical"
+                ohos:alignment="right">
+
+                <Text
+                    ohos:id="$+id:text_devicename"
+                    ohos:height="match_parent"
+                    ohos:width="match_content"
+                    ohos:right_padding="5vp"
+                    ohos:text="万达康跳绳机"
+                    ohos:text_color="#666666"
+                    ohos:text_size="16vp"></Text>
+
+            </DirectionalLayout>
+
+            <!--        最右边的按钮-->
+            <DirectionalLayout
+                ohos:height="match_parent"
+                ohos:width="40vp"
+                ohos:orientation="horizontal"
+                ohos:alignment="center">
+                <Button
+                    ohos:right_padding="10vp"
+                    ohos:height="20vp"
+                    ohos:width="20vp"
+                    ohos:background_element="$media:right_arrow"></Button>
+            </DirectionalLayout>
+
+        </DirectionalLayout>
+
+<!--        所属空间-->
+        <DirectionalLayout
+            ohos:id="$+id:directionLayout_belong_space"
+            ohos:height="60vp"
+            ohos:width="340vp"
+            ohos:orientation="horizontal"
+            ohos:alignment="vertical_center"
+            ohos:top_padding="5vp">
+
+            <!--        最前面的文字-->
+            <DirectionalLayout
+                ohos:height="match_parent"
+                ohos:width="150vp"
+                ohos:orientation="vertical"
+                ohos:alignment="left"
+                ohos:left_padding="10vp">
+
+                <Text
+                    ohos:height="match_parent"
+                    ohos:width="match_content"
+                    ohos:text="所属空间"
+                    ohos:text_size="18vp"/>
+            </DirectionalLayout>
+
+            <!--        中间部分-->
+            <DirectionalLayout
+                ohos:height="match_parent"
+                ohos:width="150vp"
+                ohos:orientation="vertical"
+                ohos:alignment="right">
+
+                <Text
+                    ohos:id="$+id:text_belong_space"
+                    ohos:height="match_parent"
+                    ohos:width="match_content"
+                    ohos:right_padding="5vp"
+                    ohos:text="客厅"
+                    ohos:text_color="#666666"
+                    ohos:text_size="16vp"></Text>
+
+            </DirectionalLayout>
+
+            <!--        最右边的按钮-->
+            <DirectionalLayout
+                ohos:height="match_parent"
+                ohos:width="40vp"
+                ohos:orientation="horizontal"
+                ohos:alignment="center">
+                <Button
+                    ohos:right_padding="10vp"
+                    ohos:height="20vp"
+                    ohos:width="20vp"
+                    ohos:background_element="$media:right_arrow"></Button>
+            </DirectionalLayout>
+
+        </DirectionalLayout>
+
+<!--        设备信息-->
+        <DirectionalLayout
+            ohos:id="$+id:deviceInfo"
+            ohos:height="60vp"
+            ohos:width="340vp"
+            ohos:orientation="horizontal"
+            ohos:alignment="vertical_center"
+            ohos:top_padding="5vp">
+
+            <!--        最前面的文字-->
+            <DirectionalLayout
+                ohos:height="match_parent"
+                ohos:width="150vp"
+                ohos:orientation="vertical"
+                ohos:alignment="left"
+                ohos:left_padding="10vp">
+
+                <Text
+                    ohos:height="match_parent"
+                    ohos:width="match_content"
+                    ohos:text="设备信息"
+                    ohos:text_size="18vp"/>
+            </DirectionalLayout>
+
+            <!--        中间部分-->
+            <DirectionalLayout
+                ohos:height="match_parent"
+                ohos:width="150vp"
+                ohos:orientation="vertical"
+                ohos:alignment="right">
+
+                <Text
+                    ohos:height="match_parent"
+                    ohos:width="match_content"
+                    ohos:right_padding="5vp"
+                    ohos:text=""
+                    ohos:text_color="#666666"
+                    ohos:text_size="16vp"></Text>
+
+            </DirectionalLayout>
+
+            <!--        最右边的按钮-->
+            <DirectionalLayout
+                ohos:height="match_parent"
+                ohos:width="40vp"
+                ohos:orientation="horizontal"
+                ohos:alignment="center">
+                <Button
+                    ohos:right_padding="10vp"
+                    ohos:height="20vp"
+                    ohos:width="20vp"
+                    ohos:background_element="$media:right_arrow"></Button>
+            </DirectionalLayout>
+
+        </DirectionalLayout>
+
+<!--        删除设备-->
+        <DirectionalLayout
+            ohos:id="$+id:directionLayout_delete_device"
+            ohos:height="60vp"
+            ohos:width="340vp"
+            ohos:orientation="horizontal"
+            ohos:alignment="vertical_center"
+            ohos:top_padding="5vp">
+
+            <!--        最前面的文字-->
+            <DirectionalLayout
+                ohos:height="match_parent"
+                ohos:width="150vp"
+                ohos:orientation="vertical"
+                ohos:alignment="left"
+                ohos:left_padding="10vp">
+
+                <Text
+                    ohos:height="match_parent"
+                    ohos:width="match_content"
+                    ohos:text="删除设备"
+                    ohos:text_size="18vp"/>
+            </DirectionalLayout>
+
+            <!--        中间部分-->
+            <DirectionalLayout
+                ohos:height="match_parent"
+                ohos:width="150vp"
+                ohos:orientation="vertical"
+                ohos:alignment="right">
+
+                <Text
+                    ohos:height="match_parent"
+                    ohos:width="match_content"
+                    ohos:right_padding="5vp"
+                    ohos:text=""
+                    ohos:text_color="#666666"
+                    ohos:text_size="16vp"></Text>
+
+            </DirectionalLayout>
+
+            <!--        最右边的按钮-->
+            <DirectionalLayout
+                ohos:height="match_parent"
+                ohos:width="40vp"
+                ohos:orientation="horizontal"
+                ohos:alignment="center">
+                <Button
+                    ohos:right_padding="10vp"
+                    ohos:height="20vp"
+                    ohos:width="20vp"
+                    ohos:background_element="$media:right_arrow"></Button>
+            </DirectionalLayout>
+
+        </DirectionalLayout>
+
+<!--        快捷方式-->
+        <DirectionalLayout
+            ohos:id="$+id:directionLayout_fast_method"
+            ohos:height="60vp"
+            ohos:width="340vp"
+            ohos:orientation="horizontal"
+            ohos:alignment="vertical_center"
+            ohos:top_padding="5vp">
+
+            <!--        最前面的文字-->
+            <DirectionalLayout
+                ohos:height="match_parent"
+                ohos:width="150vp"
+                ohos:orientation="vertical"
+                ohos:alignment="left"
+                ohos:left_padding="10vp">
+
+                <Text
+                    ohos:height="match_parent"
+                    ohos:width="match_content"
+                    ohos:text="快捷方式"
+                    ohos:text_size="18vp"/>
+            </DirectionalLayout>
+
+            <!--        中间部分-->
+            <DirectionalLayout
+                ohos:height="match_parent"
+                ohos:width="150vp"
+                ohos:orientation="vertical"
+                ohos:alignment="right">
+
+                <Text
+                    ohos:height="match_parent"
+                    ohos:width="match_content"
+                    ohos:right_padding="5vp"
+                    ohos:text=""
+                    ohos:text_color="#666666"
+                    ohos:text_size="16vp"></Text>
+
+            </DirectionalLayout>
+
+            <!--        最右边的按钮-->
+            <DirectionalLayout
+                ohos:height="match_parent"
+                ohos:width="40vp"
+                ohos:orientation="horizontal"
+                ohos:alignment="center">
+                <Button
+                    ohos:right_padding="10vp"
+                    ohos:height="20vp"
+                    ohos:width="20vp"
+                    ohos:background_element="$media:right_arrow"></Button>
+            </DirectionalLayout>
+
+        </DirectionalLayout>
+
+<!--        关于-->
+        <DirectionalLayout
+            ohos:id="$+id:directionLayout_about"
+            ohos:height="60vp"
+            ohos:width="340vp"
+            ohos:orientation="horizontal"
+            ohos:alignment="vertical_center"
+            ohos:top_padding="5vp">
+
+            <!--        最前面的文字-->
+            <DirectionalLayout
+                ohos:height="match_parent"
+                ohos:width="150vp"
+                ohos:orientation="vertical"
+                ohos:alignment="left"
+                ohos:left_padding="10vp">
+
+                <Text
+                    ohos:height="match_parent"
+                    ohos:width="match_content"
+                    ohos:text="关于"
+                    ohos:text_size="18vp"/>
+            </DirectionalLayout>
+
+            <!--        中间部分-->
+            <DirectionalLayout
+                ohos:height="match_parent"
+                ohos:width="150vp"
+                ohos:orientation="vertical"
+                ohos:alignment="right">
+
+                <Text
+                    ohos:height="match_parent"
+                    ohos:width="match_content"
+                    ohos:right_padding="5vp"
+                    ohos:text=""
+                    ohos:text_color="#666666"
+                    ohos:text_size="16vp"></Text>
+
+            </DirectionalLayout>
+
+            <!--        最右边的按钮-->
+            <DirectionalLayout
+                ohos:height="match_parent"
+                ohos:width="40vp"
+                ohos:orientation="horizontal"
+                ohos:alignment="center">
+                <Button
+                    ohos:right_padding="10vp"
+                    ohos:height="20vp"
+                    ohos:width="20vp"
+                    ohos:background_element="$media:right_arrow"></Button>
+            </DirectionalLayout>
+
+        </DirectionalLayout>
+    </DirectionalLayout>
+
+</DirectionalLayout>

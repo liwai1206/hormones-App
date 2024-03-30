@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:orientation="horizontal"
+    ohos:background_element="$graphic:background_common"
+    ohos:alignment="horizontal_center"
+    ohos:top_padding="10vp">
+
+    <DirectionalLayout
+        ohos:height="match_parent"
+        ohos:width="133vp"
+        ohos:orientation="vertical"
+        ohos:alignment="horizontal_center">
+        <DirectionalLayout
+            ohos:height="match_content"
+            ohos:width="match_parent"
+            ohos:orientation="horizontal"
+            ohos:alignment="center">
+            <Text
+                ohos:height="match_content"
+                ohos:width="match_content"
+                ohos:text=" -"
+                ohos:top_padding="10vp"
+                ohos:text_size="25fp"
+                ohos:text_color="#DEE0E1"/>
+
+            <Text
+                ohos:height="match_content"
+                ohos:width="match_content"
+                ohos:text="- "
+                ohos:top_padding="10vp"
+                ohos:text_size="25fp"
+                ohos:text_color="#DEE0E1"/>
+        </DirectionalLayout>
+        <DirectionalLayout
+            ohos:height="match_content"
+            ohos:width="match_parent"
+            ohos:orientation="horizontal"
+            ohos:alignment="center">
+            <Text
+                ohos:height="match_content"
+                ohos:width="match_content"
+                ohos:text="圈数"
+                ohos:text_size="15fp"
+                ohos:text_color="#DEE0E1"/>
+        </DirectionalLayout>
+
+    </DirectionalLayout>
+
+    <Text
+        ohos:height="match_content"
+        ohos:width="match_content"
+        ohos:text="|"
+        ohos:top_padding="10vp"
+        ohos:text_size="25fp"
+        ohos:text_color="#C5C5C5"/>
+
+    <DirectionalLayout
+        ohos:height="match_parent"
+        ohos:width="133vp"
+        ohos:orientation="vertical"
+        ohos:alignment="horizontal_center">
+        <DirectionalLayout
+            ohos:height="match_content"
+            ohos:width="match_parent"
+            ohos:orientation="horizontal"
+            ohos:alignment="center">
+            <Text
+                ohos:height="match_content"
+                ohos:width="match_content"
+                ohos:text=" -"
+                ohos:top_padding="10vp"
+                ohos:text_size="25fp"
+                ohos:text_color="#DEE0E1"/>
+
+            <Text
+                ohos:height="match_content"
+                ohos:width="match_content"
+                ohos:text="- "
+                ohos:top_padding="10vp"
+                ohos:text_size="25fp"
+                ohos:text_color="#DEE0E1"/>
+        </DirectionalLayout>
+        <DirectionalLayout
+            ohos:height="match_content"
+            ohos:width="match_parent"
+            ohos:orientation="horizontal"
+            ohos:alignment="center">
+            <Text
+                ohos:height="match_content"
+                ohos:width="match_content"
+                ohos:text="绊绳数"
+                ohos:text_size="15fp"
+                ohos:text_color="#DEE0E1"/>
+        </DirectionalLayout>
+
+    </DirectionalLayout>
+
+    <Text
+        ohos:height="match_content"
+        ohos:width="match_content"
+        ohos:text="|"
+        ohos:top_padding="20vp"
+        ohos:text_size="25fp"
+        ohos:text_color="#C5C5C5"/>
+
+    <DirectionalLayout
+        ohos:height="match_parent"
+        ohos:width="133vp"
+        ohos:orientation="vertical"
+        ohos:alignment="horizontal_center">
+        <DirectionalLayout
+            ohos:height="match_content"
+            ohos:width="match_parent"
+            ohos:orientation="horizontal"
+            ohos:alignment="center">
+            <Text
+                ohos:height="match_content"
+                ohos:width="match_content"
+                ohos:text=" -"
+                ohos:top_padding="10vp"
+                ohos:text_size="25fp"
+                ohos:text_color="#DEE0E1"/>
+
+            <Text
+                ohos:height="match_content"
+                ohos:width="match_content"
+                ohos:text="- "
+                ohos:top_padding="10vp"
+                ohos:text_size="25fp"
+                ohos:text_color="#DEE0E1"/>
+        </DirectionalLayout>
+        <DirectionalLayout
+            ohos:height="match_content"
+            ohos:width="match_parent"
+            ohos:orientation="horizontal"
+            ohos:alignment="center">
+            <Text
+                ohos:height="match_content"
+                ohos:width="match_content"
+                ohos:text="电量"
+                ohos:text_size="15fp"
+                ohos:text_color="#DEE0E1"/>
+        </DirectionalLayout>
+
+    </DirectionalLayout>
+
+
+</DirectionalLayout>

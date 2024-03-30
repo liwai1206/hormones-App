@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_content"
+    ohos:width="match_content"
+    ohos:orientation="vertical"
+    ohos:background_element="$graphic:background_toast_common">
+
+    <!-- 最上面的按钮等 -->
+    <DirectionalLayout
+        ohos:top_padding="20vp"
+        ohos:height="60vp"
+        ohos:width="340vp"
+        ohos:orientation="horizontal"
+        ohos:alignment="vertical_center"
+        ohos:layout_alignment="bottom">
+
+        <Text
+            ohos:height="match_parent"
+            ohos:width="60vp"  />
+
+        <!-- 左箭头 -->
+        <Image
+            ohos:id="$+id:img_last_month"
+            ohos:height="32vp"
+            ohos:width="32vp"
+            ohos:image_src="$media:left_arrow_data"/>
+
+        <Text
+            ohos:id="$+id:text_calendar_showDate"
+            ohos:height="match_parent"
+            ohos:width="150vp"
+            ohos:text="2022年08月"
+            ohos:text_size="25vp"
+            ohos:text_weight="600"
+            ohos:text_alignment="center"/>
+
+        <Image
+            ohos:id="$+id:img_next_month"
+            ohos:height="32vp"
+            ohos:width="32vp"
+            ohos:image_src="$media:right_arrow_data"/>
+
+        <Button
+            ohos:id="$+id:btn_today"
+            ohos:height="match_parent"
+            ohos:width="60vp"
+            ohos:text="今天"
+            ohos:text_color="#0A59F7"
+            ohos:text_size="18vp"
+            ohos:text_weight="500"
+            ohos:text_alignment="center"/>
+
+    </DirectionalLayout>
+
+    <ScrollView
+        ohos:height="290vp"
+        ohos:width="340vp">
+        <!-- 日历 -->
+        <TableLayout
+            ohos:id="$+id:calendarView"
+            ohos:height="match_content"
+            ohos:width="340vp"
+            ohos:row_count="7"
+            ohos:column_count="7"
+            ohos:background_element="#ffffff">
+
+        </TableLayout>
+    </ScrollView>
+
+
+
+
+    <DirectionalLayout
+        ohos:height="50vp"
+        ohos:width="match_parent"
+        ohos:orientation="horizontal"
+        ohos:alignment="vertical_center">
+        
+        <DirectionalLayout
+            ohos:height="match_parent"
+            ohos:width="169vp"
+            ohos:orientation="horizontal"
+            ohos:alignment="center">
+            
+            <Button
+                ohos:id="$+id:btn_cancel_calendar"
+                ohos:height="50vp"
+                ohos:width="100vp"
+                ohos:text="取消"
+                ohos:text_size="18vp"
+                ohos:text_color="#0A59F7"
+                ohos:text_weight="500"/>
+            
+        </DirectionalLayout>
+
+        <Button
+            ohos:height="30vp"
+            ohos:width="1vp"
+            ohos:background_element="#CDCDCD"/>
+
+        <DirectionalLayout
+            ohos:height="match_parent"
+            ohos:width="169vp"
+            ohos:orientation="horizontal"
+            ohos:alignment="center">
+
+            <Button
+                ohos:id="$+id:btn_ok_calendar"
+                ohos:height="50vp"
+                ohos:width="100vp"
+                ohos:text="确定"
+                ohos:text_size="18vp"
+                ohos:text_color="#0A59F7"
+                ohos:text_weight="500"/>
+
+        </DirectionalLayout>
+        
+    </DirectionalLayout>
+
+</DirectionalLayout>

@@ -1,0 +1,574 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:orientation="vertical"
+    ohos:alignment="horizontal_center"
+    ohos:background_element="#F0F2F4">
+
+    <!-- 自定义一个标题栏    -->
+    <DirectionalLayout
+        ohos:top_margin="20vp"
+        ohos:height="60vp"
+        ohos:width="340vp"
+        ohos:orientation="horizontal">
+
+        <!-- 左箭头和文字 -->
+        <DirectionalLayout
+            ohos:height="match_parent"
+            ohos:width="340vp"
+            ohos:orientation="horizontal"
+            ohos:alignment="vertical_center">
+
+            <Button
+                ohos:id="$+id:btn_data_back"
+                ohos:left_padding="10vp"
+                ohos:height="32vp"
+                ohos:width="32vp"
+                ohos:background_element="$media:left_arrow"/>
+
+            <Text
+                ohos:left_margin="10vp"
+                ohos:height="match_parent"
+                ohos:width="match_content"
+                ohos:text="数据统计"
+                ohos:text_size="20vp"></Text>
+
+        </DirectionalLayout>
+
+    </DirectionalLayout>
+
+    <ScrollView
+        ohos:height="700vp"
+        ohos:width="340vp">
+
+        <DirectionalLayout
+            ohos:height="match_content"
+            ohos:width="match_parent"
+            ohos:orientation="vertical"
+            ohos:alignment="horizontal_center">
+
+            <!-- 日周月 -->
+            <DirectionalLayout
+                ohos:height="60vp"
+                ohos:width="match_parent"
+                ohos:orientation="horizontal"
+                ohos:alignment="center">
+                <!-- 日 -->
+                <DirectionalLayout
+                    ohos:id="$+id:date_day"
+                    ohos:height="50vp"
+                    ohos:width="50vp"
+                    ohos:orientation="vertical"
+                    ohos:alignment="center">
+
+                    <Text
+                        ohos:height="40vp"
+                        ohos:width="match_parent"
+                        ohos:text_alignment="center"
+                        ohos:text="日"
+                        ohos:text_weight="500"
+                        ohos:text_size="18vp"
+                        ohos:text_color="#0A59F7"/>
+
+                    <Button
+                        ohos:height="4vp"
+                        ohos:width="50vp"
+                        ohos:background_element="$graphic:background_button_data_blue"/>
+
+                </DirectionalLayout>
+
+                <!-- 周 -->
+                <DirectionalLayout
+                    ohos:id="$+id:date_week"
+                    ohos:left_margin="30vp"
+                    ohos:height="50vp"
+                    ohos:width="50vp"
+                    ohos:orientation="vertical"
+                    ohos:alignment="center">
+
+                    <Text
+                        ohos:height="40vp"
+                        ohos:width="match_parent"
+                        ohos:text_alignment="center"
+                        ohos:text="周"
+                        ohos:text_weight="500"
+                        ohos:text_size="18vp"
+                        ohos:text_color="#606162"/>
+
+                    <Button
+                        ohos:height="4vp"
+                        ohos:width="50vp"
+                        ohos:background_element="$graphic:background_button_data_blue"/>
+
+                </DirectionalLayout>
+
+                <!-- 月 -->
+                <DirectionalLayout
+                    ohos:id="$+id:date_month"
+                    ohos:left_margin="30vp"
+                    ohos:height="50vp"
+                    ohos:width="50vp"
+                    ohos:orientation="vertical"
+                    ohos:alignment="center">
+
+                    <Text
+                        ohos:height="40vp"
+                        ohos:width="match_parent"
+                        ohos:text_alignment="center"
+                        ohos:text="月"
+                        ohos:text_weight="500"
+                        ohos:text_size="18vp"
+                        ohos:text_color="#606162"/>
+
+                    <Button
+                        ohos:height="4vp"
+                        ohos:width="50vp"
+                        ohos:background_element="$graphic:background_button_data_blue"/>
+
+                </DirectionalLayout>
+
+            </DirectionalLayout>
+
+            <!-- 时间显示 -->
+            <DirectionalLayout
+                ohos:top_margin="20vp"
+                ohos:height="50vp"
+                ohos:width="match_parent"
+                ohos:orientation="horizontal"
+                ohos:alignment="vertical_center"
+                ohos:background_element="pink">
+
+                <!-- 左箭头 -->
+                <DirectionalLayout
+                    ohos:height="match_parent"
+                    ohos:width="25vp"
+                    ohos:orientation="horizontal"
+                    ohos:alignment="center">
+
+                    <Image
+                        ohos:id="$+id:last_day_week_month"
+                        ohos:height="32vp"
+                        ohos:width="32vp"
+                        ohos:image_src="$media:left_arrow_data"/>
+                </DirectionalLayout>
+
+                <!-- 中间显示 -->
+                <DirectionalLayout
+                    ohos:height="match_parent"
+                    ohos:width="290vp"
+                    ohos:orientation="horizontal"
+                    ohos:alignment="center">
+
+                    <Text
+                        ohos:id="$+id:text_showDate"
+                        ohos:height="match_parent"
+                        ohos:width="match_content"
+                        ohos:text_alignment="center"
+                        ohos:text="2022年08月15日"
+                        ohos:text_weight="500"
+                        ohos:text_size="18vp"/>
+
+                    <Image
+                        ohos:id="$+id:image_show_calendar"
+                        ohos:height="match_content"
+                        ohos:width="match_content"
+                        ohos:image_src="$media:down_arrow_gray"/>
+
+                </DirectionalLayout>
+
+                <!-- 右箭头 -->
+                <DirectionalLayout
+                    ohos:height="match_parent"
+                    ohos:width="25vp"
+                    ohos:orientation="horizontal"
+                    ohos:alignment="center">
+
+                    <Image
+                        ohos:id="$+id:next_day_week_month"
+                        ohos:height="32vp"
+                        ohos:width="32vp"
+                        ohos:image_src="$media:right_arrow_data"/>
+
+                </DirectionalLayout>
+
+
+            </DirectionalLayout>
+
+            <!-- 运动时长 -->
+            <DirectionalLayout
+                ohos:height="350vp"
+                ohos:width="match_parent"
+                ohos:orientation="vertical"
+                ohos:alignment="left"
+                ohos:background_element="$graphic:background_common">
+
+                <Text
+                    ohos:left_padding="20vp"
+                    ohos:top_padding="20vp"
+                    ohos:height="match_content"
+                    ohos:width="match_parent"
+                    ohos:text="运动时长"
+                    ohos:text_weight="500"
+                    ohos:text_size="18vp"/>
+
+                <Text
+                    ohos:left_padding="15vp"
+                    ohos:top_margin="10vp"
+                    ohos:height="match_content"
+                    ohos:width="match_parent"
+                    ohos:text="次"
+                    ohos:text_size="13vp"
+                    ohos:text_color="#9A9A9A"/>
+
+                <com.example.anan.AAChartCore.AAChartCoreLib.AAChartCreator.AAChartView
+                    ohos:top_margin="10vp"
+                    ohos:id="$+id:AAChartView01"
+                    ohos:height="match_parent"
+                    ohos:width="match_parent"
+                    />
+
+
+            </DirectionalLayout>
+
+            <!-- 圈数 -->
+            <DirectionalLayout
+                ohos:top_margin="20vp"
+                ohos:height="350vp"
+                ohos:width="match_parent"
+                ohos:orientation="vertical"
+                ohos:alignment="left"
+                ohos:background_element="$graphic:background_common">
+
+                <Text
+                    ohos:left_padding="20vp"
+                    ohos:top_padding="20vp"
+                    ohos:height="match_content"
+                    ohos:width="match_parent"
+                    ohos:text="圈数"
+                    ohos:text_weight="500"
+                    ohos:text_size="18vp"/>
+
+                <Text
+                    ohos:left_padding="15vp"
+                    ohos:top_margin="10vp"
+                    ohos:height="match_content"
+                    ohos:width="match_parent"
+                    ohos:text="圈"
+                    ohos:text_size="13vp"
+                    ohos:text_color="#9A9A9A"/>
+
+                <com.example.anan.AAChartCore.AAChartCoreLib.AAChartCreator.AAChartView
+                    ohos:top_margin="10vp"
+                    ohos:id="$+id:AAChartView02"
+                    ohos:height="match_parent"
+                    ohos:width="match_parent"
+                    />
+
+            </DirectionalLayout>
+
+            <!-- 当天数据1 -->
+            <DirectionalLayout
+                ohos:top_margin="15vp"
+                ohos:height="50vp"
+                ohos:width="match_parent"
+                ohos:orientation="horizontal"
+                ohos:alignment="vertical_center">
+
+                <Text
+                    ohos:id="$+id:text_showdata"
+                    ohos:left_padding="10vp"
+                    ohos:height="match_parent"
+                    ohos:width="match_parent"
+                    ohos:text="当天数据 (下午3:00)"
+                    ohos:text_size="18vp"
+                    ohos:text_weight="500"/>
+
+            </DirectionalLayout>
+
+            <!-- 当天数据2 -->
+            <DirectionalLayout
+                ohos:top_margin="5vp"
+                ohos:bottom_margin="80vp"
+                ohos:height="210vp"
+                ohos:width="match_parent"
+                ohos:orientation="vertical"
+                ohos:alignment="left"
+                ohos:background_element="$graphic:background_common">
+
+                <!-- 上部分 -->
+                <DirectionalLayout
+                    ohos:height="105vp"
+                    ohos:width="match_parent"
+                    ohos:orientation="horizontal"
+                    ohos:alignment="vertical_center">
+                    <!-- 上左-->
+                    <DirectionalLayout
+                        ohos:height="match_parent"
+                        ohos:width="169vp"
+                        ohos:orientation="vertical"
+                        ohos:alignment="center">
+
+                        <DirectionalLayout
+                            ohos:height="match_content"
+                            ohos:width="match_parent"
+                            ohos:orientation="horizontal"
+                            ohos:alignment="horizontal_center"
+                            ohos:layout_alignment="bottom">
+
+                            <Text
+                                ohos:id="$+id:text_average_speed"
+                                ohos:height="match_content"
+                                ohos:width="match_content"
+                                ohos:text="0"
+                                ohos:text_size="30vp"
+                                ohos:text_weight="600"/>
+                            <Text
+                                ohos:height="match_content"
+                                ohos:width="match_content"
+                                ohos:text="圈/分钟"
+                                ohos:text_size="16vp"
+                                ohos:text_color="#666666"/>
+
+                        </DirectionalLayout>
+                        <DirectionalLayout
+                            ohos:height="match_content"
+                            ohos:width="match_parent"
+                            ohos:orientation="horizontal"
+                            ohos:alignment="center">
+
+                            <Text
+                                ohos:height="match_content"
+                                ohos:width="match_content"
+                                ohos:text="平均速度"
+                                ohos:text_size="16vp"
+                                ohos:text_color="#666666"/>
+
+                        </DirectionalLayout>
+
+                    </DirectionalLayout>
+
+                    <Button
+                        ohos:height="35vp"
+                        ohos:width="1vp"
+                        ohos:background_element="#CDCDCD"/>
+
+                    <!-- 上右-->
+                    <DirectionalLayout
+                        ohos:height="match_parent"
+                        ohos:width="169vp"
+                        ohos:orientation="vertical"
+                        ohos:alignment="center">
+
+                        <DirectionalLayout
+                            ohos:height="match_content"
+                            ohos:width="match_parent"
+                            ohos:orientation="horizontal"
+                            ohos:layout_alignment="bottom"
+                            ohos:alignment="horizontal_center">
+
+                            <Text
+                                ohos:id="$+id:text_max_speed"
+                                ohos:height="match_content"
+                                ohos:width="match_content"
+                                ohos:text="0"
+                                ohos:text_size="30vp"
+                                ohos:text_weight="600"/>
+                            <Text
+                                ohos:height="match_content"
+                                ohos:width="match_content"
+                                ohos:text="圈/分钟"
+                                ohos:text_size="16vp"
+                                ohos:text_color="#666666"/>
+
+                        </DirectionalLayout>
+                        <DirectionalLayout
+                            ohos:height="match_content"
+                            ohos:width="match_parent"
+                            ohos:orientation="horizontal"
+                            ohos:alignment="center">
+
+                            <Text
+                                ohos:height="match_content"
+                                ohos:width="match_content"
+                                ohos:text="最大速度"
+                                ohos:text_size="16vp"
+                                ohos:text_color="#666666"/>
+
+                        </DirectionalLayout>
+
+                    </DirectionalLayout>
+
+                </DirectionalLayout>
+
+                <!-- 下部分 -->
+                <DirectionalLayout
+                    ohos:height="105vp"
+                    ohos:width="match_parent"
+                    ohos:orientation="horizontal"
+                    ohos:alignment="vertical_center">
+                    <!-- 下左-->
+                    <DirectionalLayout
+                        ohos:height="match_parent"
+                        ohos:width="112vp"
+                        ohos:orientation="vertical"
+                        ohos:alignment="center">
+
+                        <DirectionalLayout
+                            ohos:height="match_content"
+                            ohos:width="match_parent"
+                            ohos:orientation="horizontal"
+                            ohos:layout_alignment="bottom"
+                            ohos:alignment="horizontal_center">
+
+                            <Text
+                                ohos:id="$+id:text_interrupt_number"
+                                ohos:height="match_content"
+                                ohos:width="match_content"
+                                ohos:text="0"
+                                ohos:text_size="30vp"
+                                ohos:text_weight="600"/>
+                            <Text
+                                ohos:height="match_content"
+                                ohos:width="match_content"
+                                ohos:text="次"
+                                ohos:text_size="16vp"
+                                ohos:text_color="#666666"/>
+
+                        </DirectionalLayout>
+                        <DirectionalLayout
+                            ohos:height="match_content"
+                            ohos:width="match_parent"
+                            ohos:orientation="horizontal"
+                            ohos:alignment="center">
+
+                            <Text
+                                ohos:height="match_content"
+                                ohos:width="match_content"
+                                ohos:text="绊绳数"
+                                ohos:text_size="16vp"
+                                ohos:text_color="#666666"/>
+
+                        </DirectionalLayout>
+
+                    </DirectionalLayout>
+
+                    <Button
+                        ohos:height="35vp"
+                        ohos:width="1vp"
+                        ohos:background_element="#CDCDCD"/>
+
+                    <!-- 下中-->
+                    <DirectionalLayout
+                        ohos:height="match_parent"
+                        ohos:width="113vp"
+                        ohos:orientation="vertical"
+                        ohos:alignment="center">
+
+                        <DirectionalLayout
+                            ohos:height="match_content"
+                            ohos:width="match_parent"
+                            ohos:orientation="horizontal"
+                            ohos:alignment="horizontal_center"
+                            ohos:layout_alignment="bottom">
+
+                            <Text
+                                ohos:id="$+id:text_round_number"
+                                ohos:height="match_content"
+                                ohos:width="match_content"
+                                ohos:text="0"
+                                ohos:text_size="30vp"
+                                ohos:text_weight="600"/>
+
+                        </DirectionalLayout>
+                        <DirectionalLayout
+                            ohos:height="match_content"
+                            ohos:width="match_parent"
+                            ohos:orientation="horizontal"
+                            ohos:alignment="center">
+
+                            <Text
+                                ohos:height="match_content"
+                                ohos:width="match_content"
+                                ohos:text="转动圈数"
+                                ohos:text_size="16vp"
+                                ohos:text_color="#666666"/>
+
+                        </DirectionalLayout>
+
+                    </DirectionalLayout>
+
+                    <Button
+                        ohos:height="35vp"
+                        ohos:width="1vp"
+                        ohos:background_element="#CDCDCD"/>
+
+                    <!-- 下右-->
+                    <DirectionalLayout
+                        ohos:height="match_parent"
+                        ohos:width="114vp"
+                        ohos:orientation="vertical"
+                        ohos:alignment="center">
+
+                        <DirectionalLayout
+                            ohos:height="match_content"
+                            ohos:width="match_parent"
+                            ohos:orientation="horizontal"
+                            ohos:alignment="horizontal_center"
+                            ohos:layout_alignment="bottom">
+
+                            <Text
+                                ohos:id="$+id:text_min"
+                                ohos:height="match_content"
+                                ohos:width="match_content"
+                                ohos:text="0"
+                                ohos:text_size="30vp"
+                                ohos:text_weight="600"/>
+                            <Text
+                                ohos:height="match_content"
+                                ohos:width="match_content"
+                                ohos:text="分"
+                                ohos:text_size="16vp"
+                                ohos:text_color="#666666"/>
+                            <Text
+                                ohos:id="$+id:text_second"
+                                ohos:height="match_content"
+                                ohos:width="match_content"
+                                ohos:text="0"
+                                ohos:text_size="30vp"
+                                ohos:text_weight="600"/>
+                            <Text
+                                ohos:height="match_content"
+                                ohos:width="match_content"
+                                ohos:text="秒"
+                                ohos:text_size="16vp"
+                                ohos:text_color="#666666"/>
+
+                        </DirectionalLayout>
+                        <DirectionalLayout
+                            ohos:height="match_content"
+                            ohos:width="match_parent"
+                            ohos:orientation="horizontal"
+                            ohos:alignment="center">
+
+                            <Text
+                                ohos:height="match_content"
+                                ohos:width="match_content"
+                                ohos:text="运动时长"
+                                ohos:text_size="16vp"
+                                ohos:text_color="#666666"/>
+
+                        </DirectionalLayout>
+
+                    </DirectionalLayout>
+
+                </DirectionalLayout>
+
+            </DirectionalLayout>
+
+
+        </DirectionalLayout>
+    </ScrollView>
+
+</DirectionalLayout>

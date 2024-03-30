@@ -1,0 +1,40 @@
+{
+  "string": [
+    {
+      "name": "entry_MainAbility",
+      "value": "万达康跳绳机"
+    },
+    {
+      "name": "mainability_description",
+      "value": "Java_Empty Ability"
+    },
+    {
+      "name": "mainability_HelloWorld",
+      "value": "你好，世界"
+    },
+    {
+      "name": "entry_VideoMainAbility",
+      "value": "entry_VideoMainAbility"
+    },
+    {
+      "name": "videomainability_description",
+      "value": "Java_Empty Ability"
+    },
+    {
+      "name": "videomainability_HelloWorld",
+      "value": "你好，世界"
+    },
+    {
+      "name": "entry_UpgradeMainAbility",
+      "value": "entry_UpgradeMainAbility"
+    },
+    {
+      "name": "upgrademainability_description",
+      "value": "Java_Empty Ability"
+    },
+    {
+      "name": "upgrademainability_HelloWorld",
+      "value": "你好，世界"
+    }
+  ]
+}

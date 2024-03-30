@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:orientation="vertical"
+    ohos:alignment="horizontal_center"
+    ohos:background_element="#F0F2F4">
+
+    <!-- 自定义一个标题栏    -->
+    <DirectionalLayout
+        ohos:height="50vp"
+        ohos:width="340vp"
+        ohos:orientation="horizontal">
+
+        <!-- 左箭头和文字 -->
+        <DirectionalLayout
+            ohos:height="match_parent"
+            ohos:width="340vp"
+            ohos:orientation="horizontal"
+            ohos:alignment="vertical_center">
+
+            <Button
+                ohos:id="$+id:btn_upgrade_back"
+                ohos:left_padding="10vp"
+                ohos:height="32vp"
+                ohos:width="32vp"
+                ohos:background_element="$media:left_arrow"/>
+
+            <Text
+                ohos:left_margin="10vp"
+                ohos:height="match_parent"
+                ohos:width="match_content"
+                ohos:text="固件更新"
+                ohos:text_size="20vp"></Text>
+
+        </DirectionalLayout>
+
+    </DirectionalLayout>
+
+    <ScrollView
+        ohos:height="580vp"
+        ohos:width="340vp">
+
+        <DirectionalLayout
+            ohos:height="match_content"
+            ohos:width="match_parent"
+            ohos:orientation="vertical"
+            ohos:alignment="horizontal_center">
+
+            <!-- 橙色区域-->
+            <DirectionalLayout
+                ohos:id="$+id:direction_tip_orange"
+                ohos:top_margin="10vp"
+                ohos:height="80vp"
+                ohos:width="340vp"
+                ohos:orientation="horizontal"
+                ohos:alignment="vertical_center"
+                ohos:background_element="$graphic:background_common_orange">
+
+
+                <DirectionalLayout
+                    ohos:height="match_parent"
+                    ohos:width="50vp"
+                    ohos:orientation="horizontal"
+                    ohos:alignment="center">
+
+                    <Button
+                        ohos:height="30vp"
+                        ohos:width="30vp"
+                        ohos:background_element="$media:attention"/>
+                </DirectionalLayout>
+
+
+                <DirectionalLayout
+                    ohos:height="match_parent"
+                    ohos:width="280vp"
+                    ohos:orientation="horizontal"
+                    ohos:alignment="center">
+
+                    <Text
+                        ohos:height="match_content"
+                        ohos:width="match_parent"
+                        ohos:text="升级期间，请确保XX产品连接状态，并将其靠近手机。"
+                        ohos:text_color="#ED6F21"
+                        ohos:text_size="16vp"
+                        ohos:text_weight="400"
+                        ohos:multiple_lines="true"
+                        ohos:line_height_num="1.1"/>
+
+                </DirectionalLayout>
+
+
+            </DirectionalLayout>
+
+            <StackLayout
+                ohos:height="250vp"
+                ohos:width="250vp">
+
+                <com.liulishuo.magicprogresswidget.MagicProgressCircle
+                    ohos:id="$+id:roundProgressBar"
+                    ohos:height="250vp"
+                    ohos:width="250vp"
+                    ohos:mpc_percent="0.0"
+                    ohos:mpc_start_color="#81BCFF"
+                    ohos:mpc_end_color="#2B5BF9"
+                    ohos:mpc_stroke_width="25vp"
+                    ohos:mpc_default_color="#EAECEE"
+                    ohos:mpc_foot_over_head="true"/>
+
+                <DirectionalLayout
+                    ohos:height="match_parent"
+                    ohos:width="match_parent"
+                    ohos:orientation="vertical"
+                    ohos:alignment="center">
+
+                    <Image
+                        ohos:id="$+id:image_upgrade_progress"
+                        ohos:height="50vp"
+                        ohos:width="50vp"
+                        ohos:image_src="$media:upgrade_progress"/>
+
+                    <DirectionalLayout
+                        ohos:id="$+id:propgress_value_layout"
+                        ohos:height="match_content"
+                        ohos:width="match_parent"
+                        ohos:orientation="horizontal"
+                        ohos:layout_alignment="bottom"
+                        ohos:alignment="horizontal_center">
+
+                        <Text
+                            ohos:id="$+id:text_progress_value"
+                            ohos:height="match_content"
+                            ohos:width="match_content"
+                            ohos:text="0"
+                            ohos:text_size="70vp"
+                            ohos:text_weight="600"></Text>
+
+                        <Text
+                            ohos:height="match_content"
+                            ohos:width="match_content"
+                            ohos:text=" %"
+                            ohos:text_size="15vp"></Text>
+
+                    </DirectionalLayout>
+
+
+                    <Text
+                        ohos:id="$+id:text_progress_current_version"
+                        ohos:top_margin="15vp"
+                        ohos:height="match_content"
+                        ohos:width="match_content"
+                        ohos:text="11.1.523"
+                        ohos:text_size="15vp"
+                        ohos:text_color="#606162"></Text>
+
+
+                </DirectionalLayout>
+
+            </StackLayout>
+
+
+            <DirectionalLayout
+                ohos:top_margin="20vp"
+                ohos:height="50vp"
+                ohos:width="match_parent"
+                ohos:orientation="horizontal"
+                ohos:alignment="center">
+
+                <Text
+                    ohos:id="$+id:text_found_newversion"
+                    ohos:height="match_parent"
+                    ohos:width="match_content"
+                    ohos:text="发现新版本"
+                    ohos:text_color="#A8A9AB"
+                    ohos:text_size="20vp"/>
+            </DirectionalLayout>
+
+            <DirectionalLayout
+                ohos:id="$+id:directionalLayout_new_version"
+                ohos:top_margin="20vp"
+                ohos:height="match_content"
+                ohos:width="340vp"
+                ohos:orientation="vertical"
+                ohos:alignment="left"
+                ohos:background_element="$graphic:background_common">
+
+                <Text
+                    ohos:id="$+id:text_new_version"
+                    ohos:top_margin="10vp"
+                    ohos:left_padding="10vp"
+                    ohos:height="match_content"
+                    ohos:width="match_content"
+                    ohos:text="  新版本  "
+                    ohos:text_weight="400"
+                    ohos:text_size="18vp"/>
+                <Text
+                    ohos:id="$+id:text_newversion_number"
+                    ohos:top_padding="2vp"
+                    ohos:left_padding="10vp"
+                    ohos:height="match_content"
+                    ohos:width="match_parent"
+                    ohos:text="11.1.1.523"
+                    ohos:text_color="#A8A9AB"
+                    ohos:text_size="15vp"/>
+                <Text
+                    ohos:id="$+id:text_newversion_size"
+                    ohos:top_padding="2vp"
+                    ohos:left_padding="10vp"
+                    ohos:height="match_content"
+                    ohos:width="match_parent"
+                    ohos:text="大小: 2M"
+                    ohos:text_color="#A8A9AB"
+                    ohos:text_size="15vp"/>
+                <Text
+                    ohos:top_padding="2vp"
+                    ohos:left_padding="10vp"
+                    ohos:height="match_content"
+                    ohos:width="match_parent"
+                    ohos:text="详情:"
+                    ohos:text_color="#A8A9AB"
+                    ohos:text_size="15vp"/>
+                <Text
+                    ohos:id="$+id:text_newversion_detail"
+                    ohos:top_padding="2vp"
+                    ohos:left_padding="10vp"
+                    ohos:bottom_padding="10vp"
+                    ohos:height="match_content"
+                    ohos:width="match_parent"
+                    ohos:multiple_lines="true"
+                    ohos:text="XXXXXXXXXXXXXXXX"
+                    ohos:text_color="#A8A9AB"
+                    ohos:text_size="15vp"/>
+
+            </DirectionalLayout>
+
+            <DirectionalLayout
+                ohos:top_margin="10vp"
+                ohos:height="match_content"
+                ohos:width="340vp"
+                ohos:orientation="vertical"
+                ohos:alignment="left"
+                ohos:background_element="$graphic:background_common">
+
+                <Text
+                    ohos:left_padding="10vp"
+                    ohos:top_padding="15vp"
+                    ohos:height="match_content"
+                    ohos:width="match_parent"
+                    ohos:text="当前版本"
+                    ohos:text_weight="400"
+                    ohos:text_size="18vp"/>
+                <Text
+                    ohos:id="$+id:text_current_version"
+                    ohos:left_padding="10vp"
+                    ohos:top_padding="2vp"
+                    ohos:bottom_padding="15vp"
+                    ohos:height="match_content"
+                    ohos:width="match_parent"
+                    ohos:text="11.1.1.522"
+                    ohos:text_color="#A8A9AB"
+                    ohos:text_size="15vp"/>
+
+            </DirectionalLayout>
+
+        </DirectionalLayout>
+    </ScrollView>
+
+    <DirectionalLayout
+        ohos:height="100vp"
+        ohos:width="340vp"
+        ohos:orientation="vertical"
+        ohos:alignment="center">
+        
+        <Button
+            ohos:id="$+id:btn_download_upgrade"
+            ohos:height="50vp"
+            ohos:width="200vp"
+            ohos:text="下载更新"
+            ohos:text_size="20vp"
+            ohos:text_color="white"
+            ohos:background_element="$graphic:background_button_upgrade"/>
+        
+    </DirectionalLayout>
+
+</DirectionalLayout>

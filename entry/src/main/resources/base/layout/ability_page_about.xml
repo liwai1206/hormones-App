@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:alignment="horizontal_center"
+    ohos:background_element="#F0F2F4">
+
+    <!-- 自定义一个标题栏    -->
+    <DirectionalLayout
+        ohos:top_margin="20vp"
+        ohos:height="60vp"
+        ohos:width="340vp"
+        ohos:orientation="horizontal">
+
+        <!-- 左箭头和文字 -->
+        <DirectionalLayout
+            ohos:height="match_parent"
+            ohos:width="340vp"
+            ohos:orientation="horizontal"
+            ohos:alignment="vertical_center">
+
+            <Button
+                ohos:id="$+id:btn_about_back"
+                ohos:left_padding="10vp"
+                ohos:height="32vp"
+                ohos:width="32vp"
+                ohos:background_element="$media:left_arrow"/>
+
+            <Text
+                ohos:left_margin="10vp"
+                ohos:height="match_parent"
+                ohos:width="match_content"
+                ohos:text="关于"
+                ohos:text_size="20vp"></Text>
+
+        </DirectionalLayout>
+
+    </DirectionalLayout>
+
+    <DirectionalLayout
+        ohos:top_margin="50vp"
+        ohos:height="600vp"
+        ohos:width="match_parent"
+        ohos:orientation="vertical"
+        ohos:alignment="horizontal_center">
+
+        <Image
+            ohos:height="100vp"
+            ohos:width="100vp"
+            ohos:scale_mode="zoom_center"
+            ohos:image_src="$media:wandakang"
+            ohos:background_element="$graphic:background_image_oval"/>
+
+        <Text
+            ohos:height="match_content"
+            ohos:width="match_content"
+            ohos:top_margin="10vp"
+            ohos:text="XXX"
+            ohos:text_size="20vp"/>
+
+        <DirectionalLayout
+            ohos:height="match_content"
+            ohos:width="match_content"
+            ohos:orientation="horizontal"
+            ohos:alignment="vertical_center">
+
+            <Text
+                ohos:height="match_content"
+                ohos:width="match_content"
+                ohos:text="版本"
+                ohos:text_color="#606162"
+                ohos:text_size="18vp"/>
+            <Text
+                ohos:height="match_content"
+                ohos:width="match_content"
+                ohos:text=" 1.0.0"
+                ohos:text_color="#606162"
+                ohos:text_size="16vp"/>
+
+        </DirectionalLayout>
+    </DirectionalLayout>
+
+    <DirectionalLayout
+        ohos:height="match_content"
+        ohos:width="match_content"
+        ohos:orientation="horizontal"
+        ohos:alignment="center">
+
+        <Button
+            ohos:id="$+id:btn_userPaper1"
+            ohos:height="match_content"
+            ohos:width="match_content"
+            ohos:text="XXX用户协议"
+            ohos:text_color="#0A59F7"
+            ohos:text_size="13vp"/>
+        <Text
+            ohos:height="match_content"
+            ohos:width="match_content"
+            ohos:text="和"
+            ohos:text_color="#606162"
+            ohos:text_size="13vp"/>
+        <Button
+            ohos:id="$+id:btn_userPaper2"
+            ohos:height="match_content"
+            ohos:width="match_content"
+            ohos:text="关于XXX隐私声明"
+            ohos:text_color="#0A59F7"
+            ohos:text_size="13vp"/>
+
+    </DirectionalLayout>
+
+    <DirectionalLayout
+        ohos:top_padding="3vp"
+        ohos:height="match_content"
+        ohos:width="match_parent"
+        ohos:orientation="horizontal"
+        ohos:alignment="center">
+
+        <Text
+            ohos:height="match_content"
+            ohos:width="match_content"
+            ohos:text="版权所有 2021XXX有限公司保留一切权力"
+            ohos:text_color="#606162"
+            ohos:text_size="13vp"/>
+
+    </DirectionalLayout>
+
+</DirectionalLayout>
